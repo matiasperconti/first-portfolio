@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb{
     background-color: v.$darkblue;
     width: 100%;
     min-height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 .language{

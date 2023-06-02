@@ -710,6 +710,7 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 1em;
 }
 @media (min-width: 700px) {
   .contact__footer {
@@ -995,7 +996,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #0a192f;
   width: 100%;
   min-height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .language {
