@@ -1,0 +1,129 @@
+@use '../abstracts/variables' as v;
+
+.main-header{
+    background-color: v.$blue;
+    color: v.$yellow;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (min-width: 700px){
+        background-color: transparent;
+    }
+
+    a{
+        color: v.$yellow;
+        text-decoration: none;
+        
+        &:hover{
+            color: v.$lightblue;
+        }
+        &:visited{
+            color: v.$yellow;
+        }
+    }
+
+    &__logo-container{
+        // flex-basis: 30%;
+        padding: 1em;
+        text-transform:uppercase;
+        font-weight:900;
+        
+        @media (min-width:700px){
+            flex-basis: auto;
+        }
+    }
+
+    &__btn-menu{
+        padding: 1em;
+        cursor: pointer;
+        transition: 0.25s;
+        
+        &:hover{
+            background-color: v.$lightblue;
+            rotate: 90deg;
+        }
+        @media (min-width: 700px){
+            display: none;
+        }
+    }
+
+    &__navigation-container{
+        flex-basis: 100%;
+        display: none;
+
+        @media (min-width: 700px){
+            display: inline;
+            flex-basis: auto;
+        }
+    }
+}
+
+
+.navigation__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 700px){
+        flex-direction: row;
+    }
+}
+
+.navigation__item{
+    display: inline-block;
+    text-align: center;
+}
+
+.navigation a{
+    display: block;
+    padding: 0.75em;
+    text-decoration: none;
+    color: v.$yellow;
+    font-size: 1.2em;
+
+    @media (min-width: 700px){
+        font-size: 1em;
+    }
+}
+
+.social__container{
+    display: none;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+
+    i{
+        padding: 1em;
+        
+        &:hover{
+            color: v.$lightblue;
+        }
+    }
+    
+    @media (min-width: 700px){
+        display: flex;
+        flex-basis: auto;
+    }
+}
+
+.toggle{
+    display:block;
+}
+
+.toggle2{
+    display: flex;
+    padding: 0.75em;
+}
+
+.rotate{
+    rotate: 90deg;
+}
+
+.selectedAnchor{
+    @media(min-width: 700px){
+        border-bottom: 1px solid v.$lightyellow;
+    }
+}

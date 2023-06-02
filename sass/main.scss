@@ -1,0 +1,22 @@
+//vendors
+@use 'vendors/normalize.scss';
+
+//abstracts
+@use 'abstracts/fonts';
+
+//base
+@use 'base/reset';
+
+//components
+@use 'components/project';
+
+//layout
+@use 'layout/about';
+@use 'layout/contact';
+@use 'layout/home';
+@use 'layout/navigation';
+@use 'layout/projects';
+
+//pages
+@use 'pages/index';
+@use 'pages/thankyou';

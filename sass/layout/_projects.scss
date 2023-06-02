@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+.projects__container{
+    height: 100%;
+    padding: 50px 3em;
+    
+    @media (min-width: 700px){
+        padding: 5em 4em;
+    }
+}
+
+.projects__title{
+    color: v.$lightslate;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1em 0;
+
+    @media (min-width: 700px){
+        font-size: 26px;
+    }
+}
+
+.projects__inner{
+    @media (min-width: 700px){
+        display: flex;
+    }
+    
+}

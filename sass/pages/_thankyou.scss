@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as v;
+
+#thankyou{
+    background-color: v.$darkblue;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.thankyou__container{
+    padding: 50px 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1{
+        color: v.$lightslate;
+        font-size: 26px;
+
+        @media (min-width: 700px){
+            font-size: 42px;
+            margin-bottom: 0.25em;
+        }
+    }
+
+    a{
+        background-color: v.$yellow;
+        color: v.$darkblue;
+        padding: 0.5em 1em;
+        margin-top: 1em;
+        border-radius: 5px;
+        text-decoration: none;
+        width: fit-content;
+        
+        &:hover{
+            background-color: v.$darkyellow;
+        }
+    }
+}

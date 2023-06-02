@@ -1,0 +1,201 @@
+@use '../abstracts/variables' as v;
+
+.contact__container{
+    padding: 50px 3em;
+    
+    @media (min-width: 700px){
+        padding: 5em 4em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.contact__title{
+    color: v.$lightslate;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1em 0;
+    
+    @media (min-width: 700px){
+        font-size: 26px;
+        flex-basis: 100%;
+    }
+}
+
+.contact__form-container{
+    // border: 2px solid v.$yellow;
+    background-color: v.$blueshadow;
+    border-radius: 5px;
+    padding: 1em;
+
+    @media (min-width: 700px){
+        background-color: v.$darkblue;
+        width: 40%;
+        padding: 2em;
+        border: none;
+        height: 350px;
+    }
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+
+    label{
+        color: v.$slate;
+        display: block;
+
+        @media(min-width: 700px){
+            font-size: 20px;
+        }
+    }
+
+    input{
+        width: 100%;
+        color: v.$lightslate;
+        background-color: v.$blueshadow;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid v.$yellow;
+        padding: 8px;
+        max-width: -webkit-fill-available;
+        @media (min-width: 700px){
+            background-color: v.$darkblue;
+        }
+    }
+
+    textarea{
+        width: 100%;
+        color: v.$lightslate;
+        background-color: v.$blueshadow;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid v.$yellow;
+        padding: 8px;
+        max-width: -webkit-fill-available;
+        @media (min-width: 700px){
+            background-color: v.$darkblue;
+        }
+    }
+
+    button{
+        background-color: v.$yellow;
+        color: v.$darkblue;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 5px;
+        margin: 1.5em 0 0.5em;
+        cursor: pointer;
+        @media (min-width: 700px){
+            margin: 2em 0 0.5em;
+            width: 25%;
+            align-self: flex-end;
+        }
+
+        &:hover{
+            background-color: v.$darkyellow;
+        }
+    }
+
+    &__name-mail{
+        @media (min-width: 700px){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 0 1em;
+        }
+    }
+    
+    .form__name{
+        margin: 0 0 1em;
+        
+        @media (min-width: 700px){
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 5em 0 0;
+        }
+    }
+    .form__mail{
+        margin: 0 0 1em;
+
+        @media (min-width: 700px){
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+    }
+}
+
+.contact__separator{
+    display: none;
+
+    @media (min-width: 700px){
+        display: flex;
+        width: 2px;
+        height: 200px;
+        background-color: v.$yellow;
+        align-self: center;
+        opacity: 50%;
+    }
+}
+
+.contact__social-container{
+    display: none;
+    
+    @media (min-width: 700px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 2em;
+        border: none;
+        height: 350px;
+
+        a{
+            text-decoration: none;
+            background-color: v.$yellow;
+            color: v.$darkblue;
+            width: 200px;
+            padding: 1em;
+            color: v.$darkblue;
+            border-radius: 5px;
+            margin: 1em;
+            display: flex;
+            justify-content: space-between;
+
+            &:hover{
+                background-color: v.$darkyellow;
+            }
+        }
+    }
+}
+
+.contact__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: 700px){
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: v.$yellow;
+        padding: 0.5em;
+        border: 1px solid v.$yellow;
+        border-radius: 5px;
+        margin: 1em 0;
+        width: 80px;
+        text-align: center;
+
+        &:hover{
+            color: v.$darkyellow;
+        }
+    }
+}

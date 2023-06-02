@@ -1,0 +1,68 @@
+@use '../abstracts/variables' as v;
+
+html{
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar{
+    background-color: v.$darkblue;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: v.$slate;
+    border-radius: 5px;
+}
+
+#home{
+    background-color: v.$darkblue;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    scroll-snap-align: center;
+}
+
+#about{
+    background-color: v.$darkblue;
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start; 
+}
+
+#projects{
+    background-color: v.$darkblue;
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+#contact{
+    background-color: v.$darkblue;
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: center;
+}
+
+.language{
+    border: 2px solid v.$yellow;
+    color: v.$yellow;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 5px;
+    display: flex;
+
+    a{
+        color: v.$yellow;
+        text-decoration: none;
+        padding: 1em;
+
+        &:hover{
+            color: v.$darkyellow;
+        }
+    }
+}

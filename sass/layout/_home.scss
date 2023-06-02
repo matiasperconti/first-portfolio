@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as v;
+
+.presentation{
+    padding: 3em;
+    color: v.$slate;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media (min-width: 1024px){
+        padding: 3em 4em;
+    }
+    
+    &__name{
+        color: v.$lightslate;
+        font-size: 2em;
+        margin: 0.5em 0;
+        
+        @media (min-width: 1024px){
+            font-size: 4em;
+            margin: 0;
+        }
+    }
+    &__subtitle{
+        font-size: 2em;
+        
+        @media (min-width: 1024px){
+            font-size: 4em;
+        }
+    }
+
+    &__intro{
+        color: v.$yellow;
+        
+        @media (min-width: 1024px){
+            font-size: 1.5em;
+            margin: 0 0 0.5em 2px;
+        }
+    }
+
+    &__text{
+        padding: 2em 0;
+        line-height: 1.2em;
+        
+        @media (min-width: 1024px){
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+.home__arrow{
+    display: flex;
+    justify-content: center;
+    
+    i{
+        color: v.$yellow;
+        font-size: 3em;
+        position: absolute;
+        bottom: 2%;
+    }
+}
