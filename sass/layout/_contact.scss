@@ -115,7 +115,7 @@
         @media (min-width: 700px){
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: 60%;
             margin: 0 5em 0 0;
         }
     }
@@ -125,7 +125,7 @@
         @media (min-width: 700px){
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: 100%;
         }
     }
 }
@@ -179,6 +179,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1em 0 0;
 
     @media (min-width: 700px){
         display: none;
