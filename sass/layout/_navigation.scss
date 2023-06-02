@@ -110,16 +110,22 @@
 }
 
 .toggle{
-    display:block;
+    @media(max-width: 700px){
+        display: block
+    }
 }
 
-.toggle2{
-    display: flex;
-    padding: 0.75em;
+.toggle2{    
+    @media(max-width: 700px){
+        display: flex;
+        padding: 0.75em;
+    }
 }
 
 .rotate{
-    rotate: 90deg;
+    @media(max-width: 700px){
+        rotate: 90deg;
+    }
 }
 
 .selectedAnchor{
