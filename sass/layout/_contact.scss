@@ -2,10 +2,12 @@
 
 .contact__container{
     padding: 50px 3em;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @media (min-width: 700px){
         padding: 5em 4em;
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
