@@ -708,7 +708,6 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1em 0 0;
 }
 @media (min-width: 700px) {
   .contact__footer {
